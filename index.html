@@ -9,11 +9,128 @@
 <body>
 
 
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Jonny Action</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-warning-sign"></span>Kittens </a></li>
+                <li><a href="#"><span class=" glyphicon glyphicon-fire"></span>Guns</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-leaf"></span>Makeup tips</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-star-empty"></span>PC game cheats</a></li>
+
+
+            </ul>
+           
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<form >
+    <div class="row container">
+        <div class="col container">
+            <h2>Create Account <small>or</small><button type="button" class="btn btn-link btn-lg" data-toggle="modal" data-target="#myModal">Read more</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title"><b>Read more?Seriously?</b></h4>
+                            </div>
+                            <div class="modal-body">
+                                <blockquote>
+                                <p>I could have killed 'em all,i could kill you.in town you are the law,out here it's me.Dont pusg it or i will give u a war you wont believe.Let it go.Let it go.
+                                </p>
+                                    <footer>Rambo</footer>
+                                    </blockquote>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </h2>
+            <!-- Trigger the modal with a button -->
+
+
+        </div>
+        <div class="col">
+
+        <div class="col-lg-6">
+    <div class="col-lg-6 col-md-6 col-xs-6 form group">
+
+
+    <label for="name">First name</label>
+    <input type="text" class="form-control" id="name" placeholder="First name">
+    </div>
+            <div class="col-lg-6 col-md-6 col-xs-6 form group">
+
+
+        <label for="name">Last name</label>
+        <input type="text" class="form-control" id="name" placeholder="Last name">
+            </div>
+
+
+            <div class="col-lg-12 form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Email">
+    </div>
+    <div class="col-lg-12 form-group">
+        <label for="pwd">Password</label>
+        <input type="text" class="form-control" id="pwd" placeholder="Password">
+    </div>
+            <div class="col-lg-12">
+                <b>Favorite?</b><br>
+
+        <label class="checkbox-inline"><input type="radio" /> Kittens</label>
+
+
+        <label class="checkbox-inline"><input type="radio" /> Charlie</label>
+
+
+        <label class="checkbox-inline"><input type="radio" /> Jonny Action</label>
+
+    <button type="submit" class="btn btn-primary">Go</button>
+                </div>
+            </div>
+        <div class="col-lg-6">
+            <img src="images/cats-animals-kittens-background-us.jpg" height="400" width="900" class="img-responsive"/>
+        </div>
+            </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <img  data-toggle="tooltip" data-placement="right" title="kitten1 on right"  src="images/cats-kittens_00379052.jpg" class="img-responsive col-lg-3 col-md-3 col-xs-12">
+            <img  data-toggle="tooltip" data-placement="right" title="kitten1 on right"  src="images/cats-animals-kittens-background-us.jpg" class="img-responsive col-lg-3 col-md-3 hidden-xs">
+            <img  data-toggle="tooltip" data-placement="right" title="kitten1 on right"  src="images/c70bacb2b7ddfb8284e5114060f62aa5.jpg" class="img-responsive col-lg-3 col-md-3 hidden-xs">
+            <img  data-toggle="tooltip" data-placement="right" title="kitten1 on right"  src="images/cats-animals-kittens-background-us.jpg" class="img-responsive col-lg-3 col-md-3 hidden-xs">
+        </div>
+    </div>
+
+</form>
 
 
 
 
-    Put your HTML code here! (start with a container maybe?)
 
 
 
@@ -21,13 +138,18 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery.js">
+
+    </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js">
+
+    </script>
 
     <script>
 
-        // Put the code for assignment 5 & 6 here
+        $(document).ready(function () {
+            $('img').tooltip();// Put the code for assignment 5 & 6 here
 
     </script>
 
